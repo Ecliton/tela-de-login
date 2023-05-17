@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Klee+One:wght@400;600&family=Sriracha&display=swap');
+@font-face {
+    font-family: 'neon';
+    src: url('fontes/CoffeCake.ttf') format('truetype');
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    min-width:100vh;
+    background-color:black;
+}
+#boxf{
+
+
+    margin:70px auto;
+    width:250px;
+    border:10px solid red;
+    border-radius:30px;
+    padding:30px;
+    box-shadow:inset 0 0 40px, 0 0 40px;
+    position:relative;
+
+    font:6em 'neon', arial, sans-serif;
+    color:red;
+    text-align:center;
+    text-shadow: 0 0 20px red;
+}
+#boxf::before{
+    content: '';
+    position: absolute;
+    top: 185px;
+    left: 28px;
+    width: 81%;
+    height: 0%;
+    background-color: rgb(255 0 0);
+    box-shadow: 0 0 20px 11px rgb(255, 0, 0);
+    border-radius: 15%;
+    transform: perspective(135px) rotateX(43deg);
+}
+#boxf:hover::after{
+    content: 'login';
+
+    position:absolute;
+    top:-8%;
+    left:-3%;
+
+    width:80%;
+    padding:30px;
+    background-color:rgb(255, 0, 0);
+
+    box-shadow:0 0 100px red;
+    border:10px solid red;
+    border-radius:30px;
+
+    color:black;
+}
+#nm{
+    position:absolute;
+    top:53%;
+    left:50%;
+
+    transform:translate(-50%);
+
+    width:283px;
+    height:50px;
+    background-color:rgba(240, 248, 255, 0);
+    border: 5px solid red;
+    border-radius:30px;
+    box-shadow:inset 0 0 10px red, 0 0 10px red;
+
+    color:white;
+    font:1em arial, sans-serif;
+    padding:0px 40px 0px 40px;
+}
+#sn{
+    position:absolute;
+    top:70%;
+    left:50%;
+
+    transform:translate(-50%);
+
+    width:283px;
+    height:50px;
+    background-color:rgba(240, 248, 255, 0);
+    border: 5px solid red;
+    border-radius:30px;
+    box-shadow:inset 0 0 10px red, 0 0 10px red;
+
+    color:white;
+    font:2em arial, sans-serif;
+    padding:0px 40px 0px 40px;
+}
+.pn{
+    position:absolute;
+    top:63%;
+    left:50%;
+    transform:translate(-50%);
+    font:2em 'sriracha', arial, sans-serif;
+    color:rgb(255, 255, 255);
+
+}
+.ps{
+    position:absolute;
+    top:46%;
+    left:50%;
+    transform:translate(-50%);
+    font:2em 'sriracha', arial, sans-serif;
+    color:white;
+}
+.entrar{
+
+    display:inline-block;
+    position:absolute;
+    top:80%;
+    left:41%;
+    transform:translate(-50%);
+    font:1.3em 'sriracha', arial, sans-serif;
+    color:white;
+}
+
+.cadastrar{
+
+    display:inline-block;
+    position:absolute;
+    top:80%;
+    left:58%;
+    transform:translate(-50%);
+    font:1.3em 'sriracha', arial, sans-serif;
+    color:white;
+}
+
+
