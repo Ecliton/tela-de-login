@@ -19,28 +19,66 @@ const relogio=setInterval(function tempo(){
     }
 })
 
-let usuario= document.getElementById('nm1')
-let entrar=document.getElementById('entrar')
-entrar.addEventListener('click', busca)
-let senha=document.getElementById('sn1')
-let cad=document.getElementById('cad')
-cad=addEventListener('click', cadastrar)
-let mensagem= document.getElementById('msg1')
+let usu= document.getElementById('nm')
+let snh= document.getElementById('sn')
+let msg1=document.getElementById('msg1')
+
+let ent=document.getElementById('entrar')
+let cad=document.getElementById('cadastrar')
+
+ent.addEventListener('click', entrar)
+cad.addEventListener('click', cadastrar)
+
 let bcd=[]
 
 function cadastrar(){
+    if(usu.value.length==0 || snh.value.length==0){
 
-    let user=String(usuario.value)
-    let pass=Number(senha.value)
+        window.alert('preencha todos os campos')
 
-    bcd.push(user,pass)
-}
-function busca(){
-    let busca=bcd.indexOf(user)
+        usu.value=''
+        snh.value=''
 
-    if(busca==-1){
-        window.alert('lalala')
+    }else if(snh.value.length <8){
+
+        window.alert('senha de no minimo 8 caracteres')
+
+        usu.value=''
+        snh.value=''
     }else{
-        window.alert('lelele')
+
+    let us=String(usu.value)
+    let sn=Number(snh.value)
+
+    bcd.push(us,sn)
+
+    msg1.style.animation='aparecer1 5s linear'
+    
+    usu.value=''
+    snh.value=''
+
+}
+}
+
+function entrar(){
+
+    us1=String(usu.value)
+    sn1=Number(snh.value)
+
+    let busca=bcd.indexOf(us1)
+    let busca1=bcd.indexOf(sn1)
+
+    if(busca==-1 || busca1==-1){
+        window.alert('usuario ou senha incorretos')
+
+        msg1.style.animation='aparecer1 5s linear'
+    
+    usu.value=''
+    snh.value=''
+
+    }else{
+        window.alert('usuário encontrado')
+        window.location.replace("pag1.html")
     }
+
 }

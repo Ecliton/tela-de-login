@@ -205,7 +205,7 @@ body{
     100%{color: rgb(192, 3, 3); 
         text-shadow: 0 0 20px rgb(192, 3, 3)}
 }
-#msg{
+/*#msg{
     position:absolute;
     top:58%;
     left:40px;
@@ -246,167 +246,31 @@ body{
 
     background-color: rgb(255, 255, 255);
 
-}
-
-@keyframes aparecer{
-    0%{box-shadow:0 0 18px 8px rgba(255, 255, 255, 0);}
-    100%{box-shadow:0 0 18px 8px rgb(255, 255, 255);}
-}
-
-/*CADASTRO*/
-
-#boxf1{
-    position:absolute;
-    top:30px;
-    left:50%;
-    transform:translate(-50%);
-
-    width:300px;
-    border:10px solid red;
-    border-radius:30px;
-    padding:30px;
-    box-shadow:inset 0 0 40px, 0 0 40px;
-
-
-    font:6em 'neon', arial, sans-serif;
-    color:red;
-    text-align:center;
-    text-shadow: 0 0 20px red;
-}
-#boxf1::before{
-    content: '';
-    position: absolute;
-    top: 150%;
-    left: 45px;
-    width: 75%;
-    height: 0%;
-    background-color: rgb(255 0 0);
-    box-shadow: 0 0 20px 11px rgb(255, 0, 0);
-    border-radius: 15%;
-    transform: perspective(135px) rotateX(43deg);
-}
-#boxf1:hover::after{
-    content: 'cadastro';
-
-    position:absolute;
-    top:-8%;
-    left:-3%;
-
-    width:83%;
-    padding:30px;
-    background-color:rgb(255, 0, 0);
-
-    box-shadow:0 0 100px red;
-    border:10px solid red;
-    border-radius:30px;
-
-    color:black;
-}
-#boxf1 span{
-    animation-name:piscar;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-#cad{
-    display:inline-block;
-    position:absolute;
-    top:80%;
-    left:59%;
-    transform:translate(-50%);
-    font:1.3em 'sriracha', arial, sans-serif;
-    background-color:rgba(255, 0, 0, 0);
-    color:white;
-    border:0;
-} 
-#cad:hover{
-    padding:0px 10px;
-    border-radius:10px;
-    background-color:red;
-    transition-duration: 0.2s;
-}
-#vt{
-
-    display:inline-block;
-    position:absolute;
-    top:80%;
-    left:42%;
-    transform:translate(-50%);
-    font:1.3em 'sriracha', arial, sans-serif;
-    background-color:rgba(255, 0, 0, 0);
-    color:white;
-}
-#vt:hover{
-    padding:0px 10px;
-    border-radius:10px;
-    background-color:red;
-    transition-duration: 0.2s;
-}
+}*/
 #msg1{
     position:absolute;
     top:58%;
     left:40px;
 
-    display: none;
     width:100px;
     padding:20px; 
     border-radius:10px;
-    border:5px solid white;
-    box-shadow:inset 0 0 20px white, 0 0 20px white;
+    border:5px solid rgba(255, 255, 255, 0);
+    box-shadow:inset 0 0 20px rgba(255, 255, 255, 0), 0 0 20px rgba(255, 255, 255, 0);
 
-    color:white;
+    color:rgba(255, 255, 255, 0);
     font:1.4em 'sriracha', arial, sans-serif;
-    text-shadow:0 0 20px white;
-
-
-}
-#msg1::before{
-    content: '';
-
-    position:absolute;
-    top:140%;
-    left:20%;
-
-    height:0%;
-    width:60%;
-    transform:perspective(60px)  rotateX(50deg);
-    box-shadow:0 0 18px 8px rgb(255, 255, 255);
-
-    background-color: rgb(255, 255, 255);
+    text-shadow:0 0 20px rgba(255, 255, 255, 0);
 
 }
-#nm1{
-    position:absolute;
-    top:53%;
-    left:50%;
-
-    transform:translate(-50%);
-
-    width:283px;
-    height:50px;
-    background-color:rgba(240, 248, 255, 0);
-    border: 5px solid red;
-    border-radius:30px;
-    box-shadow:inset 0 0 10px red, 0 0 10px red;
-
-    color:white;
-    font:1em arial, sans-serif;
-    padding:0px 40px 0px 40px;
+@keyframes aparecer1{
+    0%{color:rgba(255, 255, 255, 0);text-shadow:0 0 20px rgba(255, 255, 255, 0);  border:5px solid rgba(56, 19, 19, 0); box-shadow:inset 0 0 20px rgba(255, 255, 255, 0), 0 0 20px rgba(255, 255, 255, 0);}
+    
+    50%{border:5px solid white;
+        box-shadow:inset 0 0 20px white, 0 0 20px white;
+        color:white;
+        text-shadow:0 0 20px white;}
+        
+    100%{color:rgba(255, 255, 255, 0);text-shadow:0 0 20px rgba(255, 255, 255, 0);  border:5px solid rgba(56, 19, 19, 0); box-shadow:inset 0 0 20px rgba(255, 255, 255, 0), 0 0 20px rgba(255, 255, 255, 0);}
 }
-#sn1{
-    position:absolute;
-    top:70%;
-    left:50%;
-
-    transform:translate(-50%);
-
-    width:283px;
-    height:50px;
-    background-color:rgba(240, 248, 255, 0);
-    border: 5px solid red;
-    border-radius:30px;
-    box-shadow:inset 0 0 10px red, 0 0 10px red;
-
-    color:white;
-    font:2em arial, sans-serif;
-    padding:0px 40px 0px 40px;
-}
+    
